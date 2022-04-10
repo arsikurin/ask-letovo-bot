@@ -19,7 +19,7 @@ dp = Dispatcher(bot)
 async def handle_start_help(message: types.Message):
     payload = f'{fn if (fn := message.from_user.first_name) else ""} {ln if (ln := message.from_user.last_name) else ""}'.strip()
     await message.answer(f"Greetings, *{payload}*\!")
-    await message.answer("Ask me a question related to @LetovoAnalyticsBot\n_It will be resent to @arsikurin_")
+    await message.answer("Ask me a question related to @LetovoAnalyticsBot\n_It will be resent to the developer")
 
 
 @dp.message_handler()
